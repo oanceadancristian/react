@@ -1,0 +1,198 @@
+.login-or-register-container {
+  background: url('./images/gym.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.title-and-form {
+  width: 35em;
+  height: 35em;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: whitesmoke;
+  border-radius: 0.5em;
+  box-shadow: 0 0 1em black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.login-or-register-form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.form div {
+  margin-bottom: 0.5em;
+}
+
+.title-and-form input[type='text'],
+.title-and-form input[type='email'],
+.title-and-form input[type='password'] {
+  height: 3em;
+  width: 20em;
+  font-weight: bold;
+  padding-left: 2.5em;
+  border-radius: 0.5em;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.title-and-form input:focus {
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+  border-bottom: 0.1em solid #cc6600;
+  color: whitesmoke;
+}
+
+.title-and-form input::placeholder {
+  text-transform: capitalize;
+}
+
+.title-and-form input:focus::placeholder {
+  visibility: hidden;
+}
+
+.title-and-form input:focus + .firstName-icon {
+  color: #cc6600;
+}
+
+.title-and-form input:focus + .lastName-icon {
+  color: #cc6600;
+}
+
+.title-and-form input:focus + .email-icon {
+  color: #cc6600;
+}
+
+.title-and-form input:focus + .password-icon {
+  color: #cc6600;
+}
+
+.title-and-form input:focus + .retype_password-icon {
+  color: #cc6600;
+}
+
+.email,
+.password,
+.retype_password,
+.firstName,
+.lastName {
+  position: relative;
+  color: black;
+}
+
+.email .email-icon,
+.password .password-icon,
+.retype_password .retype_password-icon,
+.firstName .firstName-icon,
+.lastName .lastName-icon {
+  position: absolute;
+  left: 0.5em;
+  top: 0.85em;
+}
+
+.login-or-register {
+  padding: 1em 2em;
+  width: 100%;
+  background-color: #cc6600;
+  color: whitesmoke;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+  box-shadow: 0 0.25em 0.5em black;
+}
+
+.login-or-register:hover {
+  background-color: #ff8000;
+  box-shadow: 0 0.5em 1em black;
+}
+
+.login-or-register:active {
+  background-color: #ff8000;
+  box-shadow: 0 0.25em 0.5em black;
+}
+
+.no-error {
+  border: 0.1em solid black;
+}
+
+.with-error {
+  border: 0.1em solid #b30000;
+}
+
+.error-text {
+  color: #b30000;
+  text-align: center;
+  margin: 0 0 0.5em 0;
+}
+
+.remember-me {
+  margin: 1em 0;
+}
+
+.remember-label {
+  display: inline;
+}
+
+.no-account-text {
+  text-align: center;
+  margin: 1em 0 1em 0;
+  font-size: 1.1em;
+}
+
+.no-account-text-link {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #cc6600;
+}
+
+.no-account-text-link:hover {
+  color: #ff8000;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 2em white inset !important;
+  box-shadow: 0 0 0 2em white inset !important;
+  opacity: 0.75;
+}
+
+@media (max-width: 768px) {
+  .title-and-form {
+    width: 30em;
+  }
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 1.5em;
+  }
+
+  .title-and-form {
+    width: 25em;
+  }
+
+  .no-account-text {
+    font-size: 1em;
+  }
+}

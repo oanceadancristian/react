@@ -1,0 +1,33 @@
+.not-found-title-and-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}
+
+.title,
+.message {
+  text-align: center;
+}
+
+.message {
+  font-size: 1.5em;
+}
+
+.message-link {
+  color: #cc6600;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.75em;
+  }
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 1.5em;
+  }
+}

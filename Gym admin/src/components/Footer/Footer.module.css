@@ -1,0 +1,16 @@
+.footer {
+  margin-top: 1em;
+  background-color: black;
+  box-shadow: 0.1em 0 1em black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-text {
+  color: whitesmoke;
+  font-weight: bold;
+}

@@ -1,0 +1,112 @@
+.delete-icon {
+  color: #990000;
+}
+
+.delete-icon:hover {
+  color: #b30000;
+  cursor: pointer;
+}
+
+.modal,
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.overlay {
+  background: rgba(50, 50, 50, 0.75);
+}
+
+.modal-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: whitesmoke;
+  padding: 1em 2em;
+  border-radius: 0.25em;
+  max-width: 50vw;
+  min-width: 25vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.close-button {
+  background-color: whitesmoke;
+  color: #909090;
+  border: none;
+  border-radius: 0.25em;
+  cursor: pointer;
+  float: right;
+  font-size: 1.1em;
+}
+
+.close-button:hover {
+  color: #757575;
+}
+
+.close-button:active {
+  color: #909090;
+}
+
+.modal-body {
+  text-align: center;
+  padding-bottom: 0.5em;
+}
+
+.modal-question {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.no-button,
+.yes-button {
+  padding: 0.5em 1em;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0.25em;
+}
+
+.no-button {
+  background-color: #006622;
+  color: whitesmoke;
+  box-shadow: 0 0.25em 0.5em black;
+}
+
+.no-button:hover {
+  background-color: #00802b;
+  box-shadow: 0 0.5em 1em black;
+}
+
+.no-button:active {
+  background-color: #00802b;
+  box-shadow: 0 0.25em 0.5em black;
+}
+
+.yes-button {
+  background-color: #990000;
+  color: whitesmoke;
+  box-shadow: 0 0.25em 0.5em black;
+}
+
+.yes-button:hover {
+  background-color: #b30000;
+  box-shadow: 0 0.5em 1em black;
+}
+
+.yes-button:active {
+  background-color: #b30000;
+  box-shadow: 0 0.25em 0.5em black;
+}

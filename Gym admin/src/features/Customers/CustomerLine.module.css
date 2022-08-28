@@ -1,0 +1,60 @@
+.tbody-line:nth-of-type(odd) {
+  background-color: #e6e6e6;
+  color: black;
+  text-align: center;
+}
+
+.tbody-line:nth-of-type(even) {
+  background-color: #f2f2f2;
+  color: black;
+  text-align: center;
+}
+
+.td-line {
+  padding: 1em;
+  font-size: 1.1em;
+  border-radius: 0.25em;
+}
+
+.customer-link {
+  color: black;
+  font-weight: bold;
+}
+
+.customer-link:hover {
+  color: #cc6600;
+  text-decoration: underline;
+}
+
+.gift-icon {
+  color: #660080;
+}
+
+.active-or-inactive {
+  display: inline-block;
+}
+
+.active-icon {
+  color: #006622;
+  margin-left: 0.5em;
+}
+
+.inactive-icon {
+  color: #990000;
+  margin-left: 0.5em;
+}
+
+.edit {
+  color: #000080;
+}
+
+.edit:hover {
+  color: #000099;
+}
+
+.delete {
+  color: #990000;
+}
+.delete:hover {
+  color: #b30000;
+}

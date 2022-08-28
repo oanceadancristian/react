@@ -1,0 +1,322 @@
+.customer-details-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.customer-details-container-content {
+  padding-bottom: 5em;
+}
+
+.title {
+  text-align: center;
+  margin: 1em 0 0 0;
+}
+
+.happy-birthday-container {
+  text-align: center;
+  color: #660080;
+}
+
+.happy-birthday-message {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.gift-icon {
+  font-size: 2.5em;
+}
+
+.edit-form {
+  margin-top: 2em;
+}
+
+.divide-parts {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  width: 50%;
+  margin-bottom: 0.75em;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.input-text-no-error,
+.input-email-no-error {
+  width: 15em;
+  height: 2.5em;
+  padding-left: 1em;
+  font-weight: bold;
+  background-color: whitesmoke;
+  border-radius: 0.25em;
+  border: 0.1em solid black;
+}
+
+.input-text-no-error:focus,
+.input-email-no-error:focus {
+  background-color: #faf8eb;
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+}
+
+.input-text-error,
+.input-email-error {
+  width: 15em;
+  height: 2em;
+  padding-left: 1em;
+  font-weight: bold;
+  border-radius: 0.25em;
+  border: 0.1em solid #b30000;
+}
+
+.input-text-error:focus,
+.input-email-error:focus {
+  background-color: #faf8eb;
+  outline: none;
+  border-radius: 0;
+}
+
+.input-checkbox {
+  width: 2em;
+  height: 1em;
+}
+
+.input-text::placeholder,
+.input-email::placeholder,
+.input-number::placeholder {
+  text-align: center;
+  text-transform: none;
+}
+
+.additional-information {
+  text-align: center;
+  font-weight: bold;
+}
+
+.textarea-no-error {
+  width: 40em;
+  height: 15em;
+  font-weight: bold;
+  resize: none;
+  border-radius: 0.25em;
+  padding: 0.5em;
+  border: 0.1em solid black;
+}
+
+.textarea-no-error:focus {
+  background-color: #faf8eb;
+  outline: none;
+  border-radius: 0;
+}
+
+.textarea-error {
+  width: 40em;
+  height: 15em;
+  font-weight: bold;
+  resize: none;
+  border-radius: 0.25em;
+  padding: 0.5em;
+  border: 0.1em solid #b30000;
+}
+
+.textarea-error:focus {
+  background-color: #faf8eb;
+  outline: none;
+  border-radius: 0;
+}
+
+.date-of-birth {
+  text-align: center;
+  font-weight: bold;
+}
+
+.select-day {
+  width: 3em;
+  height: 2em;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 0.5em;
+}
+
+.select-month {
+  width: 7.5em;
+  height: 2em;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 0.5em;
+}
+
+.select-year {
+  width: 4em;
+  height: 2em;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 0.5em;
+}
+
+.gender {
+  text-align: center;
+  font-weight: bold;
+}
+
+.gender label {
+  display: inline;
+  margin: 0 0.25em;
+}
+
+.occupation {
+  text-align: center;
+  font-weight: bold;
+}
+
+.select-occupation {
+  width: 20em;
+  height: 2em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.subscription-status {
+  text-align: center;
+  font-weight: bold;
+}
+
+.subscription-status label {
+  display: inline;
+  margin: 0 0.25em;
+}
+
+.update {
+  text-align: center;
+}
+
+.update-customer {
+  margin-top: 1em;
+  padding: 1.25em 2.5em;
+  width: 20em;
+  background-color: #000080;
+  color: whitesmoke;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5em;
+  margin-bottom: 0.5em;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 0.25em 0.5em black;
+}
+
+.update-customer:hover {
+  background-color: #000099;
+  box-shadow: 0 0.5em 1em black;
+}
+
+.update-customer:active {
+  background-color: #000099;
+  box-shadow: 0 0.25em 0.5em black;
+}
+
+.error-text {
+  color: #b30000;
+  text-align: center;
+  margin: 0.5em 0 2em 0;
+  font-weight: normal;
+}
+
+.success-text {
+  color: #00802b;
+  text-align: center;
+  margin: 0 0 2em 0;
+  font-weight: normal;
+}
+
+.loading-no-error,
+.loading-error {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}
+
+.access-denied-title-and-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}
+
+.access-denied-title,
+.access-denied-message {
+  text-align: center;
+}
+
+.access-denied-message {
+  font-size: 1.5em;
+}
+
+.access-denied-link {
+  color: #cc6600;
+  text-decoration: none;
+}
+
+@media (max-width: 992px) {
+  .title {
+    font-size: 1.75em;
+  }
+
+  .divide-parts {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+  }
+
+  .divide-parts > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .textarea-no-error {
+    width: 35em;
+  }
+
+  .textarea-error {
+    width: 35em;
+  }
+
+  .error-text {
+    margin-bottom: 0.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  .textarea-no-error {
+    width: 30em;
+  }
+
+  .textarea-error {
+    width: 30em;
+  }
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 1.5em;
+  }
+
+  .textarea-no-error {
+    width: 25em;
+  }
+
+  .textarea-error {
+    width: 25em;
+  }
+}

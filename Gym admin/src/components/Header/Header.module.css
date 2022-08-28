@@ -1,0 +1,147 @@
+.navigation {
+  background-color: black;
+  box-shadow: 0 0.1em 1em black;
+  position: relative;
+}
+
+.primary-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: #cc6600;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
+.primary-link:hover {
+  color: #ff8000;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 15em;
+  margin-left: auto;
+  text-align: left;
+}
+
+ul li {
+  display: inline-block;
+  position: relative;
+}
+
+ul li label {
+  padding: 1em;
+  margin: 0;
+  color: whitesmoke;
+  font-size: 1.1em;
+}
+
+ul li label:hover {
+  cursor: pointer;
+}
+
+.menu {
+  display: none;
+  margin: 0;
+}
+
+ul li ul.dropdown {
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+ul li ul.dropdown li {
+  display: block;
+}
+
+ul li ul.dropdown {
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+ul li ul.dropdown li:nth-of-type(2):hover {
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+ul li ul li .secondary-link {
+  display: block;
+  padding: 0.75em;
+  color: whitesmoke;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
+ul li:hover ul.dropdown {
+  display: block;
+}
+
+ul li ul li:hover {
+  background-color: #cc6600;
+}
+
+@media (max-width: 992px) {
+  .primary-link {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(-5%, -50%);
+  }
+
+  .menu:checked ~ ul.dropdown {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .primary-link {
+    position: static;
+    transform: none;
+    display: block;
+    padding: 0.75em;
+  }
+
+  .navigation ul {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  ul li {
+    width: 100%;
+  }
+
+  ul li label {
+    padding: 0.75em;
+  }
+
+  ul li:hover ul.dropdown {
+    display: none;
+  }
+
+  ul li ul.dropdown {
+    position: static;
+    text-align: center;
+  }
+
+  ul li ul.dropdown li:nth-of-type(2):hover {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
